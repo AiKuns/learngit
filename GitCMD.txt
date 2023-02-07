@@ -7,4 +7,7 @@
   git status
 查看文件与上一个版本的difference
   git diff <file>
-  
+查看当前版本的操作记录
+  git log
+查看所有版本的操作记录
+  git reflog
