@@ -1,0 +1,10 @@
+初始化一个Git仓库
+  git init   
+添加文件到Git仓库
+  使用命令git add <file>；
+  使用命令git commit -m "<message>"，完成。
+查看仓库的当前状态
+  git status
+查看文件与上一个版本的difference
+  git diff <file>
+  
