@@ -3,6 +3,10 @@
 添加文件到Git仓库
   使用命令git add <file>；
   使用命令git commit -m "<message>"，完成。
+从仓库删除文件
+  本地rm删除文件
+  使用命令git rm <file>
+  使用命令git commit -m "<message>", 完成。
 查看仓库的当前状态
   git status
 查看文件与上一个版本的difference
