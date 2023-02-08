@@ -6,7 +6,7 @@
 查看仓库的当前状态
   git status
 查看文件与上一个版本的difference
-  git diff <file> 查看工作区和暂存区差异
+  git diff <file> 查看工作区和暂存区差异,暂存区为空时与仓库的差异
   git diff --cached <file> 查看暂存区和仓库差异
   git diff HEAD <file> 查看工作区和仓库的差异
 查看当前版本的操作记录
@@ -14,5 +14,8 @@
 查看所有版本的操作记录
   git reflog
 回退版本
-  git reset --hard HEAD^
+  git reset --hard HEAD^ 回退到上一个版本，^^回退到上上版本……
   git reset --hard <版本ID>
+撤销修改
+  git restore <file> 恢复到暂存区或仓库的最新内容
+  git restore --staged <file> 撤销暂存区的修改
