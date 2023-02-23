@@ -23,3 +23,20 @@
 撤销修改
   git restore <file> 恢复到暂存区或仓库的最新内容
   git restore --staged <file> 撤销暂存区的修改
+添加远程库
+  git remote add origin git@github.com:AiKuns/learngit.git
+  git push origin master 把当前分支master推送到远程
+  echo "# learngit" >> README.md
+创建库到远程库
+  git init
+  git add README.md
+  git commit -m "first commit"
+  git branch -M main
+  git remote add origin git@github.com:AiKuns/learngit.git
+  git push -u origin main -u参数，Git不但会把本地的master分支内容推送的远程新的master分支，还会把本地的master分支和远程的master分支关联起来
+删除远程库
+  git remote -v 查看远程库信息
+  git remote rm <name> 其实是解除了本地和远程的绑定关系，并不是物理上删除了远程库
+克隆远程库
+  git clone git@github.com:michaelliao/gitskills.git
+
